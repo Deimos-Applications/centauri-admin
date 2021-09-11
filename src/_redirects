@@ -1,3 +1,0 @@
-/prueba id=:id /prueba/:id 301! 
-
-/prueba/:id /.netlify/functions/test 200

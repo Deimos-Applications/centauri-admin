@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/prueba"
+  to = "/prueba/:id"
+  status = 301
+  force = true
+  query = {id = ":id"}
+
+  [[redirects]]
+  from = "/prueba/:id"
+  to = "/.netlify/functions/test"
+  status = 200
