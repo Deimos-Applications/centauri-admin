@@ -5,7 +5,16 @@
   force = true
   query = {id = ":id"}
 
-  [[redirects]]
-  from = "/prueba/:id"
-  to = "/.netlify/functions/test"
-  status = 200
+[[redirects]]
+from = "/prueba/:id"
+to = "/.netlify/functions/test"
+status = 200
+
+[[redirects]]
+from = "/render"
+to = "/.netlify/functions/render-function"
+status = 200
+
+[functions]
+  directory = "src"
+  included_files = ["files/*.function.ts"]
